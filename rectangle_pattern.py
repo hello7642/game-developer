@@ -17,7 +17,10 @@ def draw():
         w-=10
         h+=10
         
-
+    screen.draw.circle((250,250),50,"white")
+    screen.draw.filled_circle((410,175),50,"orange")
+    screen.draw.line((250,250),(250,500),"white")
+    screen.draw.text("Hello",(250,250),fontname="alger",fontsize=50,color="green",gcolor="cyan",owidth=1.5,ocolor="blue")
 pgzrun.go()
 
                                                                                   
