@@ -16,7 +16,7 @@ totq=0
 tottime=10
 msg=f"Welcome to quiz master! You are now on {currq}/{totq}"
 
-
+ansbox=[a1,a2,a3,a4]
 def draw():
     global msg
     screen.fill("black")
@@ -31,6 +31,12 @@ def draw():
     screen.draw.textbox(msg,scrollerbox,color="white")
     screen.draw.textbox(str(tottime),qbox,color="black")
     screen.draw.textbox("Skip",sbox,color="black")
+    screen.draw.textbox(q[0],q1,color="black")
+    index=1
+    for i in ansbox:
+        screen.draw.textbox(q[index],i,color="black")
+        index+=1
+
 
 
 
